@@ -1,749 +1,1130 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sanan Ali - Software Engineer</title>
+    <meta
+      name="keywords"
+      content="Sanan4li, Sanan Ali Portfolio, Sanan Ali Developer, Sanan Ali Github, Sanan Ali Programmer, Sanan Ali Software Engineer"
+    />
+    <meta
+      name="description"
+      content="Sanan Ali is a Software Engineer, currently working as freelance Web & Mobile Apps Developer."
+    />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="loader.css" />
+  </head>
+  <body class="bg-primary font-primary">
+    <div id="loader" class="flex h-screen items-center justify-center">
+      <div class="lds-roller">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <div class="hidden" id="main">
+      <header
+        class="z-50 w-full bg-header shadow-sm shadow-gray-900 md:sticky md:top-0"
+      >
+        <div
+          class="main-container mx-auto md:flex md:flex-row md:items-center md:justify-between"
+        >
+          <div class="flex w-full md:h-24 md:flex-row">
+            <div class="flex w-1/2 items-center justify-center p-3 text-center">
+              <h1 class="px-6 font-bree text-3xl text-white md:px-10">
+                <a href="#Sanan"> SANAN </a>
+              </h1>
+            </div>
+            <div class="flex w-2/4 items-center justify-end md:hidden">
+              <button id="menuButton" class="mr-4 p-2 font-bold text-white">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-10 w-10"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="#FFF"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div
+            class="w-full justify-center px-1 md:flex md:h-28 md:w-3/6 md:flex-col md:items-end"
+          >
+            <div
+              class="relative hidden w-full md:static md:flex md:w-10/12 md:justify-end md:bg-transparent"
+              id="menus"
+              style="z-index: 10"
+            >
+              <a
+                class="active-menu mx-1 block px-4 py-3 hover:font-semibold hover:text-primary"
+                href="#About"
+                id="AboutMenu"
+                >About</a
+              >
 
-<!DOCTYPE HTML>
-<html>
-<head>
-<title>Sanan Ali | Portfolio | Work </title>
-<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="js/jquery.min.js"></script>
-<!-- Custom Theme files -->
-<link href="css/style.css" rel='stylesheet' type='text/css' />
- <!-- Custom Theme files -->
- <meta name="viewport" content="width=device-width, initial-scale=1">
- <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
- <meta name="keywords" content="Sanan4li, Sanan Ali Portfolio, Sanan Ali Developer, Sanan Ali Github, Sanan Ali Programmer, Sanan Ali Software Engineer" />
-<meta name="description" content="Sanan Ali is a Software Engineer, currently working as freelance Web & Mobile Apps Developer.">
-	<!-- webfonts -->
-	<link href='//fonts.googleapis.com/css?family=Asap:400,700,400italic' rel='stylesheet' type='text/css'>
-	<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
-<!-- webfonts -->
- <!---- start-smoth-scrolling---->
-<script type="text/javascript" src="js/move-top.js"></script>
-<script type="text/javascript" src="js/easing.js"></script>
-	<script type="text/javascript">
-			jQuery(document).ready(function($) {
-				$(".scroll").click(function(event){		
-					event.preventDefault();
-					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-				});
-			});
-		</script>
- <!---- start-smoth-scrolling---->
-</head>
-	<body>
-		<!-- container -->
-			<!-- header -->
-			<div id="home" class="header">
-				<div class="container">
-				<!-- top-hedader -->  
-				<div class="top-header">
-					<!-- /logo -->
-					<!--top-nav---->
-					<div class="top-nav">
-					<div class="navigation">
-					<div class="logo">
-						<h1><a href="index.html"><span>SANAN</span> Ali</a></h1>
-					</div>
-					<div class="navigation-right">
-						<span class="menu"><img src="images/menu.png" alt=" " /></span>
-						<nav class="link-effect-3" id="link-effect-3">
-							<ul class="nav1 nav nav-wil">
-								<li class="active"><a data-hover="Home" href="index.html">Home</a></li>
-								<li><a class="scroll" data-hover="About" href="#about">About</a></li>
-								<li><a class="scroll" data-hover="Services" href="#services" >Services</a></li>
-								<li><a class="scroll" data-hover="Education" href="#work">Education</a></li>
-								<li><a class="scroll" data-hover="Projects" href="#port">Projects</a></li>
-								
-								<li><a class="scroll" data-hover="Contact" href="#contact">Contact</a></li>
-							</ul>
-						</nav>
-							<!-- script-for-menu -->
-								<script>
-								   $( "span.menu" ).click(function() {
-									 $( "ul.nav1" ).slideToggle( 300, function() {
-									 // Animation complete.
-									  });
-									 });
-								</script>
-							<!-- /script-for-menu -->
-					</div>
-					<div class="clearfix"></div>
-				</div>
-				<!-- /top-hedader -->
-				</div>
-			<div class="banner-info">
-				<div class="col-md-7 header-right">
-					<h1>Sanan</h1>
-					<h6>Web &amp; Mobile App Developer</h6>
-					<ul class="address">
-					
-					<li>
-							<ul class="address-text">
-								<li><b>NAME</b></li>
-								<li>Sanan Ali</li>
-							</ul>
-						</li>
-						
-						<li>
-							<ul class="address-text">
-								<li><b>PHONE </b></li>
-								<li>+92-346- ------</li>
-							</ul>
-						</li>
-						<li>
-							<ul class="address-text">
-								<li><b>ADDRESS </b></li>
-								<li>Kotla Arab Ali Khan, District Gujrat</li>
-							</ul>
-						</li>
-						<li>
-							<ul class="address-text">
-								<li><b>E-MAIL </b></li>
-								<li><a href="mailto:Alisanan620@gmail.com"> Alisanan620@gmail.com</a></li>
-							</ul>
-						</li>
-						
-						
-					</ul>
-				</div>
-				<div class="col-md-5 header-left" style="margin-top:-100px">
-					<img src="images/MyImagePNG.png" alt="">
-				</div>
-				<div class="clearfix"> </div>
-						
-		      </div>
-			</div>
-		</div>
-	</div>
-			<!-- about -->
-			<div id="about" class="about">
-				<div class="col-md-6 about-left">
-					<div id="owl-demo1" class="owl-carousel owl-carousel2">
-					                <div class="item">
-					                	<div class="about-left-grid">
-											<h2>Hi! I'm <span>Sanan</span></h2>
-											<p>
-											    I am a Software Engineer and a professional Web Developer &amp; Mobile Apps Developer. I Graduated From University of Gujrat - Hafiz Hayat Campus in 2019. My work also include SEO, Social Media Marketing, Blogging and Electronics Projects. Additionally, I served for 
-											    <a style={color:"#03fcdb"} href="https://facebook.com/profile.php?id=295569907225115&ref=content_filter">
-											          Software Engineering Society
-											    </a>
-											   as Study Head and Volunteer for 
-											    <a style={color:"#03fcdb"} href="https://facebook.com/profile.php?id=387445115045395&ref=content_filter">
-											        Developer Circles from Facebook : Gujrat
-											    </a>
-											    . 
-											</p>
-											<ul>
-												<li><a class="a-btn-a scroll" href="#port">My Work</a></li>
-												<li><a class="a-btn-h scroll" href="#contact">Hire Me</a></li>
-											</ul>
-										</div>
-					                </div>
-					</div>
-				</div>
-				<div class="col-md-6 about-right">
-					
-				</div>
-				<div class="clearfix"> </div>
-							<link href="css/owl.carousel.css" rel="stylesheet">
-							    <script src="js/owl.carousel.js"></script>
-			<script>
-				$(document).ready(function() {
-					$("#owl-demo1").owlCarousel({
-						items : 1,
-						lazyLoad : false,
-						autoPlay : true,
-						navigation : false,
-						navigationText :  false,
-						pagination : true,
-					});
-				});
-			</script>
-			<!-- Feedback -->
-			<script>
-				$(document).ready(function() {
-					$("#owl-demo3").owlCarousel({
-						items : 1,
-						lazyLoad : false,
-						autoPlay : true,
-						navigation : false,
-						navigationText :  true,
-						pagination :true,
-					});
-				});
-			</script>
-			</div>
-			<!-- /about -->
-			<!-- services -->
-			<div id="services" class="services">
-				<div class="container">
-					<div class="service-head one text-center ">
-						<h4>WHAT I DO</h4>
-						<h3>MY <span>SERVICES</span></h3>
-						<span class="border two"></span>
-					</div>
-					<!-- services-grids -->
-					<div class="wthree_about_right_grids w3l-agile">
-				<div class="col-md-6 wthree_about_right_grid">
-					<div class="col-xs-4 wthree_about_right_grid_left">
-						<div class="hvr-rectangle-in">
-							<i class="glyphicon glyphicon-pencil"></i>
-						</div>
-					</div>
-					<div class="col-xs-8 wthree_about_right_grid_right">
-						<h4>Web Design</h4>
-						<p>
-						    I design websites with the latest technology &amp; trends. I often use ReactJs for front-end design of websites. Working with Wordpress is also part of my work sometimes.
-						</p>
-					</div>
-					<div class="clearfix"> </div>
-				</div>
-				<div class="col-md-6 wthree_about_right_grid">
-					<div class="col-xs-4 wthree_about_right_grid_left">
-						<div class="hvr-rectangle-in">
-							<i class="glyphicon glyphicon-cog"></i>
-						</div>
-					</div>
-					<div class="col-xs-8 wthree_about_right_grid_right">
-						<h4>Web Development</h4>
-						<p>I work with PHP for back-end development of websites along with MySQL as database.
-						        I can also work with NodeJs for complex web apps where speed is required.
-						</p>
-					</div>
-					<div class="clearfix"> </div>
-				</div>
-				<div class="col-md-6 wthree_about_right_grid">
-					<div class="col-xs-4 wthree_about_right_grid_left">
-						<div class="hvr-rectangle-in">
-							<i class="glyphicon glyphicon-phone"></i>
-						</div>
-					</div>
-					<div class="col-xs-8 wthree_about_right_grid_right">
-						<h4>Mobile Apps Development</h4>
-						<p>
-						    Cross platform Mobile Apps is requrements of today's world. I can work with React Native to create Cross Platform Mobile Apps that works on Android as well as IOS Operating Systems.
-						</p>
-					</div>
-					<div class="clearfix"> </div>
-				</div>
-				<div class="col-md-6 wthree_about_right_grid">
-					<div class="col-xs-4 wthree_about_right_grid_left">
-						<div class="hvr-rectangle-in">
-							<i class="glyphicon glyphicon-gift"></i>
-						</div>
-					</div>
-					<div class="col-xs-8 wthree_about_right_grid_right">
-						<h4>Digital Marketing</h4>
-						<p>
-						        In the age of interent, digital marketing is the key for business today. I work with different social media platforms for marketing the products. Moreover, I also work for Search Engine Optimization of different webistes.
-						</p>
-					</div>
-					<div class="clearfix"> </div>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
+              <a
+                class="inactive-menu mx-1 block px-4 py-3 hover:font-semibold hover:text-primary"
+                href="#Skills"
+                id="SkillsMenu"
+                >Skills</a
+              >
+              <a
+                class="inactive-menu mx-1 block px-4 py-3 hover:font-semibold hover:text-primary"
+                href="#Portfolio"
+                id="PortfolioMenu"
+                >Portfolio</a
+              >
 
-					<!-- services-grids -->
-				</div>
-			</div>
-			<!-- services -->
-			<!--work-experience-->
-	<div id="work" class="work">
-		<div class="container">
-			<div class="service-head text-center">
-						<h4>WHAT I STUDIED</h4>
-						<h3>MY <span>EDUCATION</span></h3>
-						<span class="border one"></span>
-					</div>
-					<div class="time-main w3l-agile">
-							<div class="col-md-6 year-info">
-							   <ul class="year">
-								   <li>2015 - 2019</li>
-								   <li>2012 - 2015</li>
-								   <li>2012 - 2014</li>
-								  
-								 
-								   <div class="clearfix"></div>
-								</ul>
-							</div> 
-					                        <ul class="col-md-6 timeline">
-																<li>
-																  <div class="timeline-badge info"><i class="glyphicon glyphicon-book"></i></div>
-																  <div class="timeline-panel">
-																	<div class="timeline-heading">
-																	  <h4 class="timeline-title">BS in Software Engineering</h4>
-																	</div>
-																	<div class="timeline-body">
-																	  <p> I graduated as Software Engineer from University of Gujrat - Hafiz Hayat Campus, Gujrat Pakistan. I also worked with Software Engineering Society as Study Head</Head> </span>
-																	   </p>
-																	</div>
-																  </div>
-																</li>
-																
-																<li>
-																  <div class="timeline-badge primary"><i class="glyphicon glyphicon-book"></i></div>
-																  <div class="timeline-panel">
-																	<div class="timeline-heading">
-																	  <h4 class="timeline-title">Diploma of Associate Engineer (DAE)</h4>
-																	</div>
-																	<div class="timeline-body">
-																	  <p>
-																	      I completed my Diploma of Associate Engineer in Electronics from Arshad Institute of Technology Gujrat. This Diploma is Awarded by Punjab Board of Technical Education(PBTE) Lahore.
-																	    </p>
-																	</div>
-																  </div>
-																</li>
-																
-																
-																
-																<li>
-																  <div class="timeline-badge danger"><i class="glyphicon glyphicon-book"></i></div>
-																  <div class="timeline-panel">
-																	<div class="timeline-heading">
-																	  <h4 class="timeline-title">F.A in Humanities</h4>
-																	</div>
-																	<div class="timeline-body">
-																	  <p>
-																	      I completed F.A in Humanities from Board of Intermediate &amp; Secondary Education(BISE), Gujranwala. 
-																	  </p>
-																	</div>
-																  </div>
-																</li>
-																
-																
-															
-															</ul>
-								<div class="clearfix"></div>
-								</div>
-						</div>
-				</div>
-	<!--//work-experience-->
+              <a
+                class="inactive-menu mx-1 block px-4 py-3 hover:font-semibold hover:text-primary"
+                href="#Contact"
+                id="ContactMenu"
+                >Contact</a
+              >
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="flex items-center bg-secondary py-10 md:min-h-[550px]">
+        <div class="main-container">
+          <div
+            id="Sanan"
+            class="mx-auto flex w-11/12 scroll-m-40 flex-col space-y-10 md:flex-row md:space-y-0"
+          >
+            <div
+              class="flex w-full flex-col items-center justify-center md:w-1/2"
+            >
+              <div>
+                <h1 class="text-2xl font-semibold text-primary">
+                  Hi, I am SANAN,
+                </h1>
+                <p class="mt-3 flex flex-col">
+                  <span class="text-xl text-gray-300">Software Engineer &</span>
+                  <span class="text-xl text-gray-300"
+                    >Full Stack Javascript Developer</span
+                  >
+                </p>
+                <p class="mt-7">
+                  <a
+                    href="#"
+                    class="rounded-full border border-primary/50 bg-button px-6 py-3 text-xl text-gray-300 hover:bg-header"
+                  >
+                    Hire Me
+                  </a>
+                </p>
+              </div>
+            </div>
+            <div class="flex w-full items-center justify-center md:w-1/2">
+              <img src="images//20190828_003408.jpg" alt="" width="300" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-container mt-4">
+        <div class="w-full scroll-m-40 py-4" id="About">
+          <h1 class="text-center text-2xl font-bold">About Me</h1>
+          <p class="mt-3 text-center">
+            A passionate Software Engineer working with latest technologies to
+            create best digital solutions possible.
+          </p>
+          <div
+            class="mt-4 flex flex-col items-center justify-center space-y-5 md:flex-row md:justify-between md:space-y-0"
+          >
+            <div
+              class="mx-auto flex w-full items-center justify-center md:w-1/2"
+            >
+              <div>
+                <div class="mt-3">
+                  <h2 class="text-xl font-bold">Education</h2>
+                </div>
+                <div class="mt-3 flex">
+                  <div class="">
+                    <div
+                      class="relative h-[160px] w-10 border-l-[3px] border-header"
+                    >
+                      <img
+                        src="images/icon-park_degree-hat.png"
+                        width="40"
+                        alt=""
+                        class="absolute top-10 -left-5 z-10"
+                      />
+                    </div>
+                    <div
+                      class="relative h-[160px] w-10 border-l-[3px] border-header"
+                    >
+                      <img
+                        src="images/icon-park_degree-hat.png"
+                        width="40"
+                        alt=""
+                        class="absolute top-10 -left-5 z-10"
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <div
+                      class="relative h-[150px] rounded-sm border-b-[5px] border-blue-600 bg-white px-3 py-4 shadow-md"
+                    >
+                      <div
+                        class="absolute top-[30%] -left-3 border-t-[10px] border-b-[10px] border-r-[16px] border-white border-t-transparent border-b-transparent border-r-white drop-shadow-sm"
+                      ></div>
+                      <p class="text-xl font-medium">Software Engineering</p>
+                      <p class="mt-2">2015 - 2019</p>
+                      <p class="mt-2 flex flex-col">
+                        <span>University of Gujrat,</span>
+                        <span> Hafiz Hayat Campus </span>
+                      </p>
+                    </div>
+                    <div
+                      class="relative mt-5 h-[150px] rounded-sm border-b-[5px] border-blue-600 bg-white px-3 py-4 shadow-md"
+                    >
+                      <div
+                        class="absolute top-1/4 -left-3 border-t-[10px] border-b-[10px] border-r-[16px] border-white border-t-transparent border-b-transparent border-r-white drop-shadow-sm"
+                      ></div>
+                      <p class="text-xl font-medium">DAE (Electronics)</p>
+                      <p class="mt-2">2012 - 2015</p>
+                      <p class="mt-2 flex flex-col">
+                        <span>Punjab Board of Technical Education,</span>
+                        <span> PBTE Lahore </span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex w-full items-center justify-center md:w-1/2">
+              <div>
+                <div class="mt-3">
+                  <h2 class="text-xl font-bold">Work</h2>
+                </div>
+                <div class="mt-3 flex">
+                  <div class="">
+                    <div
+                      class="relative h-[160px] w-10 border-l-[3px] border-header"
+                    >
+                      <img
+                        src="images/ic_baseline-work.png"
+                        width="30"
+                        alt=""
+                        class="absolute top-10 -left-[17px] z-10"
+                      />
+                    </div>
+                    <div
+                      class="relative h-[160px] w-10 border-l-[3px] border-header"
+                    >
+                      <img
+                        src="images/ic_baseline-work.png"
+                        width="30"
+                        alt=""
+                        class="absolute top-10 -left-[17px] z-10"
+                      />
+                    </div>
+                  </div>
+                  <div class="w-full">
+                    <div
+                      class="relative h-[150px] w-full min-w-[285px] rounded-sm border-b-[5px] border-green-500 bg-white px-3 py-4 shadow-md"
+                    >
+                      <div
+                        class="absolute top-[30%] -left-3 border-t-[10px] border-b-[10px] border-r-[16px] border-white border-t-transparent border-b-transparent border-r-white drop-shadow-sm"
+                      ></div>
+                      <p class="text-xl font-medium">Software Engineer</p>
+                      <p class="mt-2">2021 - Present</p>
+                      <p class="mt-2 flex flex-col">
+                        <span>ByteMage,</span>
+                        <span> ByteMage DHA Phase III Lahore </span>
+                      </p>
+                    </div>
+                    <div
+                      class="relative mt-5 h-[150px] rounded-sm border-b-[5px] border-green-500 bg-white px-3 py-4 shadow-md"
+                    >
+                      <div
+                        class="absolute top-1/4 -left-3 border-t-[10px] border-b-[10px] border-r-[16px] border-white border-t-transparent border-b-transparent border-r-white drop-shadow-sm"
+                      ></div>
+                      <p class="text-xl font-medium">Freelancer</p>
+                      <p class="mt-2">2020 - 2021</p>
+                      <p class="mt-2 flex flex-col">
+                        <span>Web Designing & Development,</span>
+                        <span> Fiverr.com </span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-10 bg-white pt-5 pb-20">
+        <div class="main-container mt-3">
+          <div class="w-full scroll-m-40" id="Skills">
+            <h1 class="text-center text-2xl font-bold">My Skills</h1>
+            <p class="mt-3 text-center">
+              Here are tools and technologies I work with.
+            </p>
+            <div class="mx-auto mt-5 w-10/12">
+              <div class="grid grid-cols-2 gap-5 sm:grid-cols-4 lg:grid-cols-8">
+                <div class="flex flex-col items-center justify-center">
+                  <span>
+                    <img
+                      src="https://img.icons8.com/color/64/000000/html-5--v1.png"
+                    />
+                  </span>
+                  <span>HTML</span>
+                </div>
+                <div class="flex flex-col items-center justify-center">
+                  <span>
+                    <img
+                      src="https://img.icons8.com/color/64/000000/css3.png"
+                    />
+                  </span>
+                  <span>CSS</span>
+                </div>
+                <div class="flex flex-col items-center justify-center">
+                  <span>
+                    <img
+                      src="https://camo.githubusercontent.com/5734d0669fe22ce04a1cb989a156cd32c379875f6bca56d5210c9432824856d9/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f7461696c77696e646373732f7461696c77696e646373732d69636f6e2e737667"
+                    />
+                  </span>
+                  <span>Tailwind CSS</span>
+                </div>
+                <div class="flex flex-col items-center justify-center">
+                  <span>
+                    <img
+                      src="https://img.icons8.com/color/64/000000/javascript--v1.png"
+                    />
+                  </span>
+                  <span>Javascript</span>
+                </div>
 
-		<!-- portfolio -->
-<div class="portfolio" id="port">
-				<div class="service-head text-center">
-						<h4>MY WORK</h4>
-						<h3>MY <span>Projects</span></h3>
-						<span class="border"></span>
-					</div>
-			<div class="portfolio-grids">
-				<script src="js/easyResponsiveTabs.js" type="text/javascript"></script>
-				<script type="text/javascript">
-									$(document).ready(function () {
-										$('#horizontalTab').easyResponsiveTabs({
-											type: 'default', //Types: default, vertical, accordion           
-											width: 'auto', //auto or any width like 600px
-											fit: true   // 100% fit in a container
-										});
-									});
-									
-				</script>
-				<div class="sap_tabs">
-					<div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
-						<ul class="resp-tabs-list">
-							<li class="resp-tab-item" aria-controls="tab_item-0" role="tab"><span>ALL</span></li> 
-							<li class="resp-tab-item" aria-controls="tab_item-1" role="tab"><span>WEB DESIGN</span></li> 
-							<li class="resp-tab-item" aria-controls="tab_item-2" role="tab"><span>Web Development</span></li> 				
-							<li class="resp-tab-item" aria-controls="tab_item-3" role="tab"><span>Mobile Apps</span></li> 
-						</ul>				  	 
-						<div class="resp-tabs-container">
-							<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-0">
-								<div class="col-md-3 team-gd ">
-									
-										<a href="#portfolioModal1" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/web1.png" alt="">
-										
-										</a>
-									
-								</div>
-								<div class="col-md-3 team-gd ">
-									
-										<a href="#portfolioModal2" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/web2.png" alt="">
-										
-										</a>
-									
-								</div>
-								<div class="col-md-3 team-gd ">
-									
-										<a href="#portfolioModal3" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/web3.png" alt="">
-										
-										</a>
-									
-								</div>
-								<div class="col-md-3 team-gd ">
-								
-										<a href="#portfolioModal4" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/web4.png" alt="">
-										
-										</a>
-									
-								</div>
-								<div class="col-md-3 team-gd yes_marg ">
-									
-										<a href="#portfolioModal5" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/web5.png" alt="">
-										
-										</a>
-									
-								</div>
-								<div class="col-md-3 team-gd yes_marg ">
-									
-										<a href="#portfolioModal6" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/mob.jpg" alt="">
-										
-										</a>
-									
-								</div>
-								<div class="col-md-3 team-gd yes_marg ">
-									
-										<a href="#portfolioModal7" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/mob1.jpg" alt="">
-										
-										</a>
-								
-								</div>
-								<div class="col-md-3 team-gd yes_marg ">
-									
-										<a href="#portfolioModal8" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/mob2.jpg" alt="">
-										
-										</a>
-									
-								</div>
-								<div class="clearfix"></div>
-							</div>
-							<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-1">
-								<div class="col-md-3 team-gd ">
-									<div class="thumb">
-										<a href="#portfolioModal1" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/web1.png" alt="">
-										
-										</a>
-									</div>
-								</div>
-								<div class="col-md-3 team-gd  ">
-									<div class="thumb">
-										<a href="#portfolioModal2" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/web2.png" alt="">
-										
-										</a>
-									</div>
-								</div>
-								<div class="col-md-3 team-gd ">
-									
-										<a href="#portfolioModal3" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/web3.png"  alt="">
-										
-										</a>
-									
-								</div>
-								<div class="clearfix"></div>
-							</div>
-							<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-2">
-								<div class="col-md-3 team-gd ">
-									
-										<a href="#portfolioModal4" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/web4.png" alt="">
-										
-										</a>
-								
-								</div>
-								<div class="col-md-3 team-gd ">
-									
-										<a href="#portfolioModal5" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/web5.png" alt="">
-										
-										</a>
-									
-								</div>
-								<div class="col-md-3 team-gd">
-									
-										<a href="#portfolioModal2" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/web2.png" alt="">
-										
-										</a>
-									
-								</div>
-								<div class="col-md-3 team-gd">
-									
-										<a href="#portfolioModal1" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/web1.png" alt="">
-									
-										</a>
-									
-								</div>
-								<div class="clearfix"></div>
-							</div>
-								<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-3">
-								<div class="col-md-3 team-gd ">
-									
-										<a href="#portfolioModal6" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/mob.jpg" alt="">
-										
-										</a>
-									
-								</div>
-								<div class="col-md-3 team-gd">
-									
-										<a href="#portfolioModal7" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/mob1.jpg" alt="">
-										
-										</a>
-									
-								</div>
-								<div class="col-md-3 team-gd ">
-									
-										<a href="#portfolioModal8" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/mob2.jpg" alt="">
-										
-										</a>
-									
-								</div>
-								<div class="clearfix"></div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-	</div>
-	
-		
-			<!-- /header -->
-<div class="footer" id="contact">
-	<div class="container">
-	<div class="service-head one text-center">
-						<h4>CONTACT ME</h4>
-						<h3>GET <span>IN TOUCH WITH ME</span></h3>
-						<span class="border two"></span>
-					</div>
-		<div class="mail_us">
-			<div class="col-md-6 mail_left">
-				<div class="contact-grid1-left">
-					<div class="contact-grid1-left1">
-						<span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
-						<h4>Contact By Email</h4>
-						<ul>
-							<li>Email : <a href="Alisanan620@gmail.com">Alisanan620@gmail.com</a></li>
-							
-						</ul>
-					</div>
-				</div>
-					<div class="contact-grid1-left">
-						<div class="contact-grid1-left1">
-							<span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
-							<h4>Contact By Phone</h4>
-							<ul>
-								<li>Cell: +092 346 -------</li>
-								<li>Fax: +123 312</li>
-							</ul>
-						</div>
-					</div>
-					<div class="contact-grid1-left">
-						<div class="contact-grid1-left1">
-							<span class="glyphicon glyphicon-home" aria-hidden="true"></span>
-							<h4>Looking For Address</h4>
-							<ul>
-								<li>Kotla Arab Ali Khan</li>
-								<li>District Gujrat, Tehsil Kharian.</li>
-							</ul>
-						</div>
-					</div>
-				<div class="clearfix"> </div>
-			</div>
-			<div class="col-md-6 mail_right">
-				<form action="#" method="post">
-					<input type="text" name="Name" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required="">
-					<input type="email" name="Email" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
-					<input type="text" name="Mobile number" value="Mobile number" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Mobile number';}" required="">
-					<textarea name="Message..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message...';}" required="">Message...</textarea>
-					<input type="submit" value="Send">
-					
-				</form>
-			</div>
-			<div class="clearfix"></div>
-		</div>
-		<div class="copy_right text-center">
-			<p>&copy; 2020 . All rights reserved | Designed by <a href="http://facebook.com/Sanan4li" target="_blank">Sanan Ali.</a></p>
-			 <ul class="social-icons two">
-                        <li><a href="http://www.facebook.com/Sanan4li" class="fb"> </a></li>
-							<li><a href="http://www.twitter.com/Sanan4li"> </a></li>
-							
-							<li><a href="#" class="in"> </a></li>
-							<li><a href="http://www.github.com/Sanan4li" class="dott"> </a></li>
-						</ul>
-		</div>
-	</div>
-</div>
-			<!-- //footer -->
-		<!-- /container -->
-		<div class="portfolio-modal modal fade slideanim" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content port-modal">
-        <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-                <div class="rl"></div>
-            </div>
-        </div>
-        <div class="container">
-			<div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <div class="modal-body">
-						<h3>Online Food Ordering System</h3>
-                        <img src="images/web1.png" class="img-responsive img-centered" alt="">
-                        <p>
-                            A web application that allows customers to order food online as well as chefs to register themselves to work with the company.
-                        </p>
-                    </div>
+                <div class="flex flex-col items-center justify-center">
+                  <span>
+                    <img
+                      src="https://img.icons8.com/color/64/000000/typescript.png"
+                    />
+                  </span>
+                  <span>TypeScript</span>
                 </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="portfolio-modal modal fade slideanim" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content port-modal">
-        <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-                <div class="rl"></div>
-            </div>
-        </div>
-        <div class="container">
-			<div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <div class="modal-body">
-						<h3>Complete Web Solutions</h3>
-                        <img src="images/web2.png" class="img-responsive img-centered" alt="">
-                        <p>A companies website that offers different software solutions with latest technology trends. Its just a demo website.</p>
-                    </div>
+                <div class="flex flex-col items-center justify-center">
+                  <span>
+                    <img
+                      src="https://img.icons8.com/officel/60/000000/react.png"
+                    />
+                  </span>
+                  <span>React JS</span>
                 </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="portfolio-modal modal fade slideanim" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content port-modal">
-        <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-                <div class="rl"></div>
-            </div>
-        </div>
-        <div class="container">
-			<div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <div class="modal-body">
-						<h3>Online Marriage Hall Booking</h3>
-                        <img src="images/web3.png" class="img-responsive img-centered" alt="">
-                        <p>A web application that allows customers to search their desired marriage hall and Hall owneres an oppurtuinty to get online customers.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="portfolio-modal modal fade slideanim" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content port-modal">
-        <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-                <div class="rl"></div>
-            </div>
-        </div>
-        <div class="container">
-			<div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <div class="modal-body">
-						<h3>Online Marriage Hall Booking</h3>
-                        <img src="images/web4.png" class="img-responsive img-centered" alt="">
-                        <p>A web application that allows customers to search their desired marriage hall and Hall owneres an oppurtuinty to get online customers..</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="portfolio-modal modal fade slideanim" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content port-modal">
-        <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-                <div class="rl"></div>
-            </div>
-        </div>
-        <div class="container">
-			<div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <div class="modal-body">
-						<h3>Online Marriage Hall Booking</h3>
-                        <img src="images/web5.png" class="img-responsive img-centered" alt="">
-                        <p>A web application that allows customers to search their desired marriage hall and Hall owneres an oppurtuinty to get online customers.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="portfolio-modal modal fade slideanim" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content port-modal">
-        <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-                <div class="rl"></div>
-            </div>
-        </div>
-        <div class="container">
-			<div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <div class="modal-body">
-						<h3>Book Reviews Mobile App</h3>
-                        <img src="images/mob.jpg" class="img-responsive img-centered" alt="">
-                        <p>An mobile application that allows you to search any book of any category to know about reviews given by book readers.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="portfolio-modal modal fade slideanim" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content port-modal">
-        <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-                <div class="rl"></div>
-            </div>
-        </div>
-        <div class="container">
-			<div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <div class="modal-body">
-						<h3>Music Player</h3>
-                        <img src="images/mob1.jpg" class="img-responsive img-centered" alt="">
-                        <p>An Mobile App that enables you play music and also give you controls through app and through notification area.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="portfolio-modal modal fade slideanim" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content port-modal">
-        <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-                <div class="rl"></div>
-            </div>
-        </div>
-        <div class="container">
-			<div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <div class="modal-body">
-						<h3>Shopping App </h3>
-                        <img src="images/mob2.jpg" class="img-responsive img-centered" alt="">
-                        <p>An Application allows you purchase different products with your mobile phone .</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<a href="#home" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
-	<!--start-smooth-scrolling-->
-						<script type="text/javascript">
-									$(document).ready(function() {
-										/*
-										var defaults = {
-								  			containerID: 'toTop', // fading element id
-											containerHoverID: 'toTopHover', // fading element hover id
-											scrollSpeed: 1200,
-											easingType: 'linear' 
-								 		};
-										*/
-										
-										$().UItoTop({ easingType: 'easeOutQuart' });
-										
-									});
-								</script>
-								<!--end-smooth-scrolling-->
-<!-- //for bootstrap working -->
-	<script src="js/bootstrap.js"></script>
-	
 
-	</body>
+                <div class="flex flex-col items-center justify-center">
+                  <span>
+                    <img
+                      src="https://img.icons8.com/ios-filled/64/000000/react-native.png"
+                    />
+                  </span>
+                  <span>React Native</span>
+                </div>
+                <div class="flex flex-col items-center justify-center">
+                  <span>
+                    <img
+                      src="https://img.icons8.com/color/64/000000/redux.png"
+                    />
+                  </span>
+                  <span>Redux</span>
+                </div>
+              </div>
+            </div>
+            <div class="mx-auto mt-10 w-10/12">
+              <div class="grid grid-cols-2 gap-5 sm:grid-cols-4 lg:grid-cols-8">
+                <div class="flex flex-col items-center justify-center">
+                  <span>
+                    <img
+                      src="https://img.icons8.com/fluency/64/000000/node-js.png"
+                    />
+                  </span>
+                  <span>Node Js</span>
+                </div>
+                <div class="flex flex-col items-center justify-center">
+                  <span>
+                    <img
+                      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nestjs/nestjs-plain.svg"
+                      width="74"
+                    />
+                  </span>
+                  <span>Nest Js</span>
+                </div>
+                <div class="flex flex-col items-center justify-center">
+                  <span>
+                    <img src="images/electron-original.svg" width="64" />
+                  </span>
+                  <span>Electron Js</span>
+                </div>
+                <div class="flex flex-col items-center justify-center">
+                  <span>
+                    <img
+                      src="https://img.icons8.com/officel/64/000000/php-logo.png"
+                    />
+                  </span>
+                  <span>PHP</span>
+                </div>
+
+                <div class="flex flex-col items-center justify-center">
+                  <span>
+                    <img
+                      src="https://img.icons8.com/fluency/64/000000/mysql-logo.png"
+                    />
+                  </span>
+                  <span>MySQL</span>
+                </div>
+                <div class="flex flex-col items-center justify-center">
+                  <span>
+                    <img
+                      src="https://img.icons8.com/color/64/000000/microsoft-sql-server.png"
+                    />
+                  </span>
+                  <span>SQL Server</span>
+                </div>
+                <div class="flex flex-col items-center justify-center">
+                  <span>
+                    <img
+                      src="https://img.icons8.com/color/64/000000/mongodb.png"
+                    />
+                  </span>
+                  <span>Mongo DB</span>
+                </div>
+                <div class="flex flex-col items-center justify-center">
+                  <span>
+                    <img
+                      src="https://img.icons8.com/color/64/000000/firebase.png"
+                    />
+                  </span>
+                  <span>Firebase</span>
+                </div>
+              </div>
+            </div>
+            <div class="mx-auto mt-10 w-10/12">
+              <div class="grid grid-cols-2 gap-5 sm:grid-cols-4 lg:grid-cols-8">
+                <div class="flex flex-col items-center justify-center">
+                  <span>
+                    <img src="https://img.icons8.com/color/64/000000/npm.png" />
+                  </span>
+                  <span>NPM</span>
+                </div>
+                <div class="flex flex-col items-center justify-center">
+                  <span>
+                    <img src="https://img.icons8.com/color/64/000000/git.png" />
+                  </span>
+                  <span>Git</span>
+                </div>
+                <div class="flex flex-col items-center justify-center">
+                  <span>
+                    <img
+                      src="https://camo.githubusercontent.com/93b32389bf746009ca2370de7fe06c3b5146f4c99d99df65994f9ced0ba41685/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f676574706f73746d616e2f676574706f73746d616e2d69636f6e2e737667"
+                      width="64"
+                    />
+                  </span>
+                  <span>Postman</span>
+                </div>
+                <div class="flex flex-col items-center justify-center">
+                  <span>
+                    <img
+                      src="https://img.icons8.com/color/64/000000/visual-studio-code-2019.png"
+                    />
+                  </span>
+                  <span>VS Code</span>
+                </div>
+                <div class="flex flex-col items-center justify-center">
+                  <span>
+                    <img
+                      src="https://img.icons8.com/color/64/000000/figma--v1.png"
+                    />
+                  </span>
+                  <span>Figma</span>
+                </div>
+                <div class="flex flex-col items-center justify-center">
+                  <span>
+                    <img
+                      src="https://img.icons8.com/color/64/000000/adobe-photoshop--v1.png"
+                    />
+                  </span>
+                  <span>Photoshop</span>
+                </div>
+                <div class="flex flex-col items-center justify-center">
+                  <span>
+                    <img
+                      src="https://img.icons8.com/ios-filled/64/000000/github.png"
+                    />
+                  </span>
+                  <span>Github</span>
+                </div>
+                <div class="flex flex-col items-center justify-center">
+                  <span>
+                    <img
+                      src="https://img.icons8.com/ios-filled/64/000000/notion.png"
+                    />
+                  </span>
+                  <span class="text-center">Notion </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-secondary py-4">
+        <div class="main-container mt-3">
+          <div class="w-full scroll-m-40" id="Portfolio">
+            <h1 class="text-center text-2xl font-bold text-primary">
+              Projects
+            </h1>
+            <p class="mt-3 text-center text-primary/70">
+              Some of the projects I recently worked on.
+            </p>
+            <div>
+              <div
+                class="mx-auto mt-5 flex w-full bg-button text-primary/70 md:w-3/5 lg:w-2/4"
+              >
+                <p class="active-tab tab border-r border-r-primary/30">
+                  Web Design
+                </p>
+                <p class="tab border-r border-r-primary/30">Web Development</p>
+                <p class="tab">Mobile Apps</p>
+              </div>
+              <div class="portfolio-item grid" id="webDesign">
+                <div class="p-5 text-center">
+                  <img
+                    class="w-full"
+                    loading="lazy"
+                    src="images/seal-team-2.JPG"
+                    alt=""
+                  />
+                </div>
+                <div class="p-5 text-center">
+                  <img
+                    class="w-full"
+                    loading="lazy"
+                    src="images/perform.JPG"
+                    alt=""
+                  />
+                </div>
+                <div class="p-5 text-center">
+                  <img
+                    class="w-full"
+                    loading="lazy"
+                    src="images/survey.JPG"
+                    alt=""
+                  />
+                </div>
+                <div class="p-5 text-center">
+                  <img
+                    class="w-full"
+                    loading="lazy"
+                    src="images/kikki-nails.JPG"
+                    alt=""
+                  />
+                </div>
+                <div class="p-5 text-center">
+                  <img
+                    class="w-full"
+                    loading="lazy"
+                    src="images/main-land-group.JPG"
+                    alt=""
+                  />
+                </div>
+                <div class="p-5 text-center">
+                  <img
+                    class="w-full"
+                    loading="lazy"
+                    src="images/bruantech.JPG"
+                    alt=""
+                  />
+                </div>
+                <div class="p-5 text-center">
+                  <img
+                    class="w-full"
+                    loading="lazy"
+                    src="images/asi-hospital.JPG"
+                    alt=""
+                  />
+                </div>
+                <div class="p-5 text-center">
+                  <img
+                    class="w-full"
+                    loading="lazy"
+                    src="images/seal-team.JPG"
+                    alt=""
+                  />
+                </div>
+                <div class="p-5 text-center">
+                  <img
+                    class="w-full"
+                    loading="lazy"
+                    src="images/never-go-alone.JPG"
+                    alt=""
+                  />
+                </div>
+                <div class="p-5 text-center">
+                  <img
+                    class="w-full"
+                    loading="lazy"
+                    src="images/odgres.JPG"
+                    alt=""
+                  />
+                </div>
+                <div class="p-5 text-center">
+                  <img
+                    class="w-full"
+                    loading="lazy"
+                    src="images/paint-ball-2.JPG"
+                    alt=""
+                  />
+                </div>
+                <div class="p-5 text-center">
+                  <img
+                    class="w-full"
+                    loading="lazy"
+                    src="images/complete.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="portfolio-item hidden" id="webDevelopment">
+                <div class="p-5 text-center">
+                  <img
+                    class="w-full"
+                    loading="lazy"
+                    src="images/search-hall.png"
+                    alt=""
+                  />
+                </div>
+                <div class="p-5 text-center">
+                  <img
+                    class="w-full"
+                    loading="lazy"
+                    src="images/book-online.png"
+                    alt=""
+                  />
+                </div>
+                <div class="p-5 text-center">
+                  <img
+                    class="w-full"
+                    loading="lazy"
+                    src="images/marriage=hall.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="portfolio-item hidden" id="mobileApps">
+                <div class="p-5 text-center">
+                  <img
+                    class="w-full"
+                    loading="lazy"
+                    src="images/music.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="p-5 text-center">
+                  <img
+                    class="w-full"
+                    loading="lazy"
+                    src="images/books.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="p-5 text-center">
+                  <img
+                    class="w-full"
+                    loading="lazy"
+                    src="images/shooping.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="p-5 text-center">
+                  <img
+                    class="w-full"
+                    loading="lazy"
+                    src="images/quotes.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="p-5 text-center">
+                  <img
+                    class="w-full"
+                    loading="lazy"
+                    src="images/coronavirus.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="p-5 text-center">
+                  <img
+                    class="w-full"
+                    loading="lazy"
+                    src="images/contribute.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-container mt-5 py-10 md:px-10">
+        <div>
+          <div>
+            <h1 class="w-full text-center text-2xl font-bold">
+              Client's Feedback
+            </h1>
+            <p class="mt-3 text-center text-secondary">
+              Feedback from some of my clients on fiverr.
+            </p>
+          </div>
+          <div class="mt-10 px-4 py-4">
+            <div class="flex">
+              <div
+                class="relative hidden h-[400px] w-[400px] rounded-full border border-dashed border-gray-500 px-4 py-6 md:block"
+              >
+                <div
+                  class="first client absolute cursor-pointer transition-all duration-700"
+                >
+                  <img
+                    class="inactive-image rounded-full border border-gray-800 object-cover transition-all duration-700"
+                    src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cmFuZG9tJTIwcGVyc29ufGVufDB8fDB8fA%3D%3D&w=1000&q=80"
+                    alt=""
+                  />
+                </div>
+                <div
+                  class="second client absolute cursor-pointer transition-all duration-700"
+                >
+                  <img
+                    class="inactive-image rounded-full border border-gray-800 object-cover transition-all duration-700"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSD0Padc1HShFJzPtIjZslgmB3GdUO_3AyfQg&usqp=CAU"
+                    alt=""
+                  />
+                </div>
+                <div
+                  class="third client absolute cursor-pointer transition-all duration-700"
+                >
+                  <img
+                    class="inactive-image rounded-full border border-gray-800 object-cover transition-all duration-700"
+                    src="https://pyxis.nymag.com/v1/imgs/47c/6e5/80cea9a44071617524a7d3b5df458e71fb-11-elizabeth-holmes-2.rsquare.w700.jpg"
+                    alt=""
+                  />
+                </div>
+                <div
+                  class="active client absolute cursor-pointer transition-all duration-700"
+                >
+                  <img
+                    class="active-image rounded-full border border-gray-800 object-cover transition-all duration-700"
+                    src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div
+                class="relative mt-auto mb-auto max-h-[400px] w-full bg-white p-8 shadow-md md:ml-28 md:w-1/2"
+              >
+                <div
+                  class="absolute top-1/3 -left-5 hidden border-t-[15px] border-b-[15px] border-r-[25px] border-white border-t-transparent border-b-transparent border-r-white shadow-white drop-shadow-sm md:block"
+                ></div>
+                <div class="my-2 flex">
+                  <span class="text-yellow-500">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-6 w-6"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                      />
+                    </svg>
+                  </span>
+                  <span class="text-yellow-500">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-6 w-6"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                      />
+                    </svg>
+                  </span>
+                  <span class="text-yellow-500">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-6 w-6"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                      />
+                    </svg>
+                  </span>
+                  <span class="text-yellow-500">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-6 w-6"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                      />
+                    </svg>
+                  </span>
+                  <span class="text-yellow-500">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-6 w-6"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <p id="review">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Aspernatur doloribus fuga reiciendis assumenda dicta
+                  blanditiis tempora minus commodi enim, consectetur, quis
+                  consequatur! Aspernatur a ut accusantium, dignissimos
+                  exercitationem porro? Accusantium.
+                </p>
+                <p class="mt-3 text-right" id="clientName">Fahad Vohara</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-10 bg-header">
+        <div class="main-container py-10">
+          <div class="mx-auto w-10/12">
+            <div class="w-full scroll-m-10 py-4" id="Contact">
+              <h1 class="w-full text-2xl font-bold text-primary md:text-center">
+                Contact Me
+              </h1>
+              <p class="mt-3 text-primary/70 md:text-center">
+                Let's discuss your ideas.
+              </p>
+            </div>
+            <div
+              class="mt-5 flex flex-col justify-between space-y-5 md:flex-row md:space-x-5 md:space-y-0"
+            >
+              <div class="flex w-full md:w-1/2">
+                <div class="flex w-full md:justify-center">
+                  <div class="">
+                    <h2 class="text-center text-xl text-primary/70">
+                      Contact me on directly.
+                    </h2>
+                    <div class="">
+                      <div class="mt-4 flex space-x-3 text-green-400">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="h-8 w-8"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          stroke-width="2"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                          />
+                        </svg>
+                        <span class="flex items-center justify-center"
+                          ><a
+                            href="mailto:alisanan620@gmail.com"
+                            class="text-green-400 hover:text-green-500"
+                            >Alisanan620@gmail.com</a
+                          ></span
+                        >
+                      </div>
+                      <div class="mt-4 flex space-x-3 text-green-400">
+                        <span class="h-8 w-8">
+                          <svg
+                            class="svg-icon"
+                            viewBox="0 0 20 20"
+                            fill="none"
+                            stroke="currentColor"
+                          >
+                            <path
+                              fill="none"
+                              d="M11.344,5.71c0-0.73,0.074-1.122,1.199-1.122h1.502V1.871h-2.404c-2.886,0-3.903,1.36-3.903,3.646v1.765h-1.8V10h1.8v8.128h3.601V10h2.403l0.32-2.718h-2.724L11.344,5.71z"
+                            ></path>
+                          </svg>
+                        </span>
+                        <span class="flex items-center justify-center"
+                          ><a
+                            href="https://www.facebook.com/Sanan4li"
+                            target="_blank"
+                            class="text-green-400 hover:text-green-500"
+                            >facebook.com/Sanan4li</a
+                          ></span
+                        >
+                      </div>
+                      <div class="mt-4 flex space-x-3 text-green-400">
+                        <span class="h-8 w-8">
+                          <svg
+                            class="svg-icon"
+                            viewBox="0 0 20 20"
+                            fill="none"
+                            stroke="currentColor"
+                          >
+                            <path
+                              fill="none"
+                              d="M18.258,3.266c-0.693,0.405-1.46,0.698-2.277,0.857c-0.653-0.686-1.586-1.115-2.618-1.115c-1.98,0-3.586,1.581-3.586,3.53c0,0.276,0.031,0.545,0.092,0.805C6.888,7.195,4.245,5.79,2.476,3.654C2.167,4.176,1.99,4.781,1.99,5.429c0,1.224,0.633,2.305,1.596,2.938C2.999,8.349,2.445,8.19,1.961,7.925C1.96,7.94,1.96,7.954,1.96,7.97c0,1.71,1.237,3.138,2.877,3.462c-0.301,0.08-0.617,0.123-0.945,0.123c-0.23,0-0.456-0.021-0.674-0.062c0.456,1.402,1.781,2.422,3.35,2.451c-1.228,0.947-2.773,1.512-4.454,1.512c-0.291,0-0.575-0.016-0.855-0.049c1.588,1,3.473,1.586,5.498,1.586c6.598,0,10.205-5.379,10.205-10.045c0-0.153-0.003-0.305-0.01-0.456c0.7-0.499,1.308-1.12,1.789-1.827c-0.644,0.28-1.334,0.469-2.06,0.555C17.422,4.782,17.99,4.091,18.258,3.266"
+                            ></path>
+                          </svg>
+                        </span>
+                        <span class="flex items-center justify-center"
+                          ><a
+                            href="https://www.twitter.com/Sanan4li"
+                            target="_blank"
+                            class="text-green-400 hover:text-green-500"
+                            >twitter.com/Sanan4li</a
+                          ></span
+                        >
+                      </div>
+                      <div class="mt-4 flex space-x-3 text-green-400">
+                        <span class="h-8 w-8">
+                          <img
+                            src="images/akar-icons_linkedin-v1-fill.svg"
+                            alt=""
+                          />
+                        </span>
+                        <span class="flex items-center justify-center"
+                          ><a
+                            href="https://www.linkedin.com/Sanan4li"
+                            target="_blank"
+                            class="text-green-400 hover:text-green-500"
+                            >linkedin.com/Sanan4li</a
+                          ></span
+                        >
+                      </div>
+                      <div class="mt-4 flex space-x-3 text-green-400">
+                        <span class="h-8 w-8">
+                          <img src="images/bi_github.svg" alt="" />
+                        </span>
+                        <span class="flex items-center justify-center"
+                          ><a
+                            href="https://www.github.com/Sanan4li"
+                            target="_blank"
+                            class="text-green-400 hover:text-green-500"
+                            >github.com/Sanan4li</a
+                          ></span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex w-full md:w-1/2">
+                <div class="w-full md:w-3/4">
+                  <h2 class="text-xl text-primary/70">Send me a message.</h2>
+                  <form action="" class="mt-5 flex flex-col space-y-5">
+                    <input
+                      type="text"
+                      name=""
+                      id=""
+                      placeholder="Your name"
+                      class="w-full rounded-sm bg-white px-3 py-3"
+                    />
+                    <textarea
+                      type="text"
+                      name=""
+                      id=""
+                      placeholder="Your Message"
+                      rows="4"
+                      class="w-full rounded-sm bg-white px-3 py-3"
+                    ></textarea>
+                    <input
+                      type="submit"
+                      name=""
+                      id=""
+                      value="SEND"
+                      class="cursor-pointer rounded-sm border border-primary/50 bg-button px-6 py-3 text-xl text-gray-300 hover:bg-header"
+                    />
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-secondary py-10 px-2">
+        <p class="text-center text-primary/70">
+          Designed by Sanan Ali. All &copy; rights reserved.
+        </p>
+      </div>
+    </div>
+  </body>
+  <script>
+    const clients = document.getElementsByClassName("client");
+    const inactiveTabs = document.querySelectorAll(".tab");
+    const review = document.querySelector("#review");
+    const clientName = document.querySelector("#clientName");
+    const loader = document.getElementById("loader");
+    const main = document.getElementById("main");
+    const menuButton = document.querySelector("#menuButton");
+    const menus = document.querySelector("#menus");
+
+    const reviewsList = {
+      first: {
+        review:
+          "First Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur doloribus fuga reiciendis assumenda dicta blanditiis tempora minus commodi enim, consectetur, quis consequatur! Aspernatur a ut accusantium, dignissimos exercitationem porro? Accusantium.",
+        clientName: "Fahad Vahora",
+      },
+      second: {
+        review:
+          "Second Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur doloribus fuga reiciendis assumenda dicta blanditiis tempora minus commodi enim, consectetur, quis consequatur! Aspernatur a ut accusantium, dignissimos exercitationem porro? Accusantium.",
+        clientName: "Test Name 2",
+      },
+      third: {
+        review:
+          "Third Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur doloribus fuga reiciendis assumenda dicta blanditiis tempora minus commodi enim, consectetur, quis consequatur! Aspernatur a ut accusantium, dignissimos exercitationem porro? Accusantium.",
+        clientName: "Test Name 3",
+      },
+    };
+
+    menuButton.addEventListener("click", () => {
+      menus.classList.toggle("hidden");
+    });
+
+    const changeReview = (item) => {
+      review.innerText = reviewsList[item].review;
+      clientName.innerText = reviewsList[item].clientName;
+    };
+    const makeInActiveClient = (activeElement, classToAdd) => {
+      activeElement.classList.add(classToAdd);
+      activeElement.childNodes[1].classList.remove("active-image");
+      activeElement.childNodes[1].classList.add("inactive-image");
+      activeElement.classList.add("inactive");
+      activeElement.classList.remove("active");
+    };
+    const makeActiveClient = (divElement, imageElement, classToRemove) => {
+      imageElement.classList.remove("inactive-image");
+      imageElement.classList.add("active-image");
+      divElement.classList.add("active");
+      divElement.classList.remove(classToRemove);
+    };
+    const addClassToElements = (elementsArray, classNameToAdd) => {
+      elementsArray.forEach((element) => {
+        element.classList.add(classNameToAdd);
+      });
+    };
+    function makeMenuActive() {
+      document.getElementById("AboutMenu").classList.add("inactive-menu");
+      document.getElementById("AboutMenu").classList.remove("active-menu");
+      document.getElementById("SkillsMenu").classList.remove("active-menu");
+      document.getElementById("SkillsMenu").classList.add("inactive-menu");
+      document.getElementById("PortfolioMenu").classList.remove("active-menu");
+      document.getElementById("PortfolioMenu").classList.add("inactive-menu");
+      document.getElementById("ContactMenu").classList.remove("active-menu");
+      document.getElementById("ContactMenu").classList.add("inactive-menu");
+    }
+    const changeActiveTab = (e) => {
+      const activeTab = document.querySelector(".active-tab");
+      if (![...e.currentTarget.classList].includes("active-tab")) {
+        activeTab.classList.remove("active-tab");
+        e.currentTarget.classList.add("active-tab");
+        const portfolioItems = document.querySelectorAll(".portfolio-item");
+        addClassToElements(portfolioItems, "hidden");
+        if (e.currentTarget.innerText == "Web Development") {
+          document.querySelector("#webDevelopment").classList.remove("hidden");
+          document.querySelector("#webDevelopment").classList.add("grid");
+        }
+        if (e.currentTarget.innerText == "Web Design") {
+          document.querySelector("#webDesign").classList.remove("hidden");
+          document.querySelector("#webDesign").classList.add("grid");
+        }
+        if (e.currentTarget.innerText == "Mobile Apps") {
+          document.querySelector("#mobileApps").classList.remove("hidden");
+          document.querySelector("#mobileApps").classList.add("grid");
+        }
+      }
+    };
+    inactiveTabs.forEach((tab) => {
+      tab.addEventListener("click", changeActiveTab);
+    });
+    window.onload = function () {
+      loader.classList.add("hidden");
+      main.classList.remove("hidden");
+      var elements = document.getElementsByClassName("typewrite");
+      for (var i = 0; i < elements.length; i++) {
+        var toRotate = elements[i].getAttribute("data-type");
+        var period = elements[i].getAttribute("data-period");
+        if (toRotate) {
+          new TxtType(elements[i], JSON.parse(toRotate), period);
+        }
+      }
+    };
+    window.onscroll = function () {
+      var pos = window.pageYOffset;
+      if (pos < 700) {
+        makeMenuActive();
+        document.getElementById("AboutMenu").classList.remove("inactive-menu");
+        document.getElementById("AboutMenu").classList.add("active-menu");
+      }
+
+      if (pos > 900 && pos < 1600) {
+        makeMenuActive();
+        document.getElementById("SkillsMenu").classList.add("active-menu");
+        document.getElementById("SkillsMenu").classList.remove("inactive-menu");
+      }
+      if (pos > 1600 && pos < 2300) {
+        makeMenuActive();
+        document
+          .getElementById("PortfolioMenu")
+          .classList.remove("inactive-menu");
+        document.getElementById("PortfolioMenu").classList.add("active-menu");
+      }
+      if (pos > 3000 && pos < 4000) {
+        makeMenuActive();
+        document
+          .getElementById("ContactMenu")
+          .classList.remove("inactive-menu");
+        document.getElementById("ContactMenu").classList.add("active-menu");
+      }
+    };
+
+    for (let i = 0; i < clients.length; i++) {
+      clients[i].addEventListener("click", (e) => {
+        if ([...e.target.classList].includes("inactive-image")) {
+          const activeElement = document.querySelector(".active");
+          if ([...e.currentTarget.classList].includes("second")) {
+            makeInActiveClient(activeElement, "second");
+            makeActiveClient(e.currentTarget, e.target, "second");
+            changeReview("second");
+          }
+          if ([...e.currentTarget.classList].includes("first")) {
+            changeReview("first");
+            makeInActiveClient(activeElement, "first");
+            makeActiveClient(e.currentTarget, e.target, "first");
+          }
+          if ([...e.currentTarget.classList].includes("third")) {
+            changeReview("third");
+            makeInActiveClient(activeElement, "third");
+            makeActiveClient(e.currentTarget, e.target, "third");
+          }
+        }
+      });
+    }
+  </script>
 </html>
-
