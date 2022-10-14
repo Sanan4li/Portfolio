@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        bree: "Bree Serif",
+        bree: "Fredoka One",
         primary: "Asap",
       },
       colors: {
